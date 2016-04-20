@@ -1,6 +1,8 @@
 ## aframe-randomizer-components
 
-A-Frame randomizer components for [A-Frame](https://aframe.io).
+> Does not work on 0.2.0. Works on A-Frame master (0.3.0 milestone).
+
+Randomizer components for [A-Frame](https://aframe.io).
 
 ### Properties
 
