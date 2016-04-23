@@ -31,8 +31,6 @@ Random position that maps to a surface of a bounding sphere.
 | lengthX  | Sweep or arc angle.       | 360           |
 | startY   | Start angle.              | 0             |
 | lengthY  | Sweep or arc angle.       | 360           |
-| startZ   | Start angle.              | 0             |
-| lengthZ  | Sweep or arc angle.       | 360           |
 
 #### random-rotation
 

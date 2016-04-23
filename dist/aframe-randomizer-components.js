@@ -91,6 +91,35 @@
 	});
 
 	/**
+	 * Set random position within spherical bounds.
+	 */
+	AFRAME.registerComponent('random-spherical-position', {
+	  schema: {
+	    radius: {default: 10},
+	    startX: {default: 0},
+	    lengthX: {default: 360},
+	    startY: {default: 0},
+	    lengthY: {default: 360},
+	    startZ: {default: 0},
+	    lengthZ: {default: 360}
+	  },
+
+	  update: function () {
+	    var data = this.data;
+
+	    var xAngle = THREE.Math.degToRad(Math.random() * data.lengthX + data.startX);
+	    var yAngle = THREE.Math.degToRad(Math.random() * data.lengthY + data.startY);
+	    var zAngle = THREE.Math.degToRad(Math.random() * data.lengthZ + data.startZ);
+
+	    this.el.setAttribute('position', {
+	      x: data.radius * Math.cos(xAngle) * Math.sin(yAngle),
+	      y: data.radius * Math.sin(xAngle) * Math.sin(yAngle),
+	      z: data.radius * Math.cos(yAngle)
+	    });
+	  }
+	});
+
+	/**
 	 * Set random rotation within bounds.
 	 */
 	AFRAME.registerComponent('random-rotation', {
