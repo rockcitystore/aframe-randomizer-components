@@ -20,6 +20,20 @@ Randomizer components for [A-Frame](https://aframe.io).
 | min      | Minimum position bounds. | -10 -10 -10   |
 | max      | Maximum position bounds. | 10 10 10      |
 
+#### random-spherical-position
+
+Random position that maps to a surface of a bounding sphere.
+
+| Property | Description               | Default Value |
+|----------|---------------------------|---------------|
+| radius   | Radius of bounding sphere | 10            |
+| startX   | Start angle.              | 0             |
+| lengthX  | Sweep or arc angle.       | 360           |
+| startY   | Start angle.              | 0             |
+| lengthY  | Sweep or arc angle.       | 360           |
+| startZ   | Start angle.              | 0             |
+| lengthZ  | Sweep or arc angle.       | 360           |
+
 #### random-rotation
 
 | Property | Description              | Default Value |
