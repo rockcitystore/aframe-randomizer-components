@@ -1,8 +1,9 @@
 {
   "name": "aframe-randomizer-components",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A-Frame Randomizer Components for A-Frame.",
   "main": "index.js",
+  "browser": "dist/aframe-randomizer-components.min.js",
   "scripts": {
     "build": "browserify examples/main.js -o examples/build.js",
     "dev": "budo examples/main.js:build.js --dir examples --port 8000 --live --open",

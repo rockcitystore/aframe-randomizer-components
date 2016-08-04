@@ -99,9 +99,7 @@
 	    startX: {default: 0},
 	    lengthX: {default: 360},
 	    startY: {default: 0},
-	    lengthY: {default: 360},
-	    startZ: {default: 0},
-	    lengthZ: {default: 360}
+	    lengthY: {default: 360}
 	  },
 
 	  update: function () {
@@ -109,7 +107,6 @@
 
 	    var xAngle = THREE.Math.degToRad(Math.random() * data.lengthX + data.startX);
 	    var yAngle = THREE.Math.degToRad(Math.random() * data.lengthY + data.startY);
-	    var zAngle = THREE.Math.degToRad(Math.random() * data.lengthZ + data.startZ);
 
 	    this.el.setAttribute('position', {
 	      x: data.radius * Math.cos(xAngle) * Math.sin(yAngle),
